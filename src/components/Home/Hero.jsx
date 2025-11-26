@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bgImg from "../../assets/event1.avif";
+import bgImg from "../../assets/event1.jpg";
 import Link from "next/link";
 
 const HeroSection = () => {
