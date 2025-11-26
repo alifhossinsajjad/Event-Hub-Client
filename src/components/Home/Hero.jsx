@@ -1,17 +1,17 @@
 import Image from "next/image";
-import bgImg from "../../assets/event1.avif"; 
+import bgImg from "../../assets/event1.avif";
 import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section className="relative text-white py-20 lg:py-32">
-
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
-        <Image 
+        <Image
           src={bgImg}
           alt="Event background"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
@@ -22,7 +22,6 @@ const HeroSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Discover & Create
             <span className="block text-yellow-300">Unforgettable Events</span>
@@ -65,7 +64,6 @@ const HeroSection = () => {
               <div className="text-blue-100">Cities Covered</div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
