@@ -4,9 +4,12 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative text-white py-20 lg:py-32">
+    <section
+      className="relative text-white py-20 lg:py-32 h-[600px] lg:h-[800px] bg-cover bg-center"
+      style={{ backgroundImage: "url('/event1.jpg')" }}
+    >
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <Image
           src={bgImg}
           alt="Event background"
@@ -15,7 +18,7 @@ const HeroSection = () => {
           className="object-cover object-center"
           priority
         />
-      </div>
+      </div> */}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 -z-10"></div>
